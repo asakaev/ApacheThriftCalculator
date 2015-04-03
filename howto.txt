@@ -1,0 +1,8 @@
+thrift -r --gen js:node tutorial.thrift
+npm install thrift
+
+Fix server 'TypeError: Cannot read property 'tls' of undefined':
+http://stackoverflow.com/questions/27815798/node-js-thrift-server-example-gives-cannot-read-property-tls-of-undefined
+
+Fix client 'Error: Cannot find module 'thrift/transport'':
+https://github.com/forward/node-hive/issues/3
