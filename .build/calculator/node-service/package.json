@@ -1,0 +1,23 @@
+{
+  "name": "calculator",
+  "version": "0.0.40",
+
+  "main": "bin/index.js",
+
+  "dependencies": {
+    "node-yaa": "0.0.1"
+  },
+
+  "devDependencies": {
+    "node-tio": "0.0.x-x"
+  },
+
+  "peerDependencies": {
+    "node-thrift": "1.0.x-x",
+    "node-tio": "0.0.x-x"
+  },
+
+  "publishConfig": {
+    "registry": "http://sonatype-nexus.livetex.ru/nexus/content/repositories/livetex-npm-new/"
+  }
+}
