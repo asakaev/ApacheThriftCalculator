@@ -5,7 +5,7 @@ var ttypes = require('./gen-nodejs/tutorial_types');
 transport = thrift.TBufferedTransport();
 protocol = thrift.TBinaryProtocol();
 
-var connection = thrift.createConnection("localhost", 9090, {
+var connection = thrift.createConnection("localhost", 1337, {
   transport: transport,
   protocol: protocol
 });
