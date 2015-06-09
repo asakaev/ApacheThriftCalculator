@@ -1,0 +1,21 @@
+var util = require('node-util');
+var yaa = require('node-yaa');
+var tio = require('node-tio');
+var calc = require('calculator');
+//var fs = require('fs');
+
+
+/*%make -s index.js-compile%*/
+
+process.on('uncaughtException', function(err) {
+  console.log('Caught exception', err);
+  console.log(err.stack);
+});
+
+process.addListener('SIGHUP', calc.reload);
+process.addListener('SIGINT', calc.destroy);
+process.addListener('SIGTERM', calc.destroy);
+
+calc.init(process.env['PORT'] || 1337,
+        process.env['HOST'] || '127.0.0.1',
+        new ext.Application(process.env['CONFIG']));

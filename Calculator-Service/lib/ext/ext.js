@@ -1,0 +1,6 @@
+
+
+/**
+ * @namespace
+ */
+var ext = {};

@@ -1,0 +1,14 @@
+{
+  "name": "calculator",
+  "version": "0.0.0",
+
+  "main": "bin/index.js",
+
+  "dependencies": {
+    "calculator": "0.0.40",
+    "node-yaa": "0.0.2",
+    "node-tio": "0.0.2",
+    "node-thrift": "1.0.5",
+    "node-util": "1.0.0"
+  }
+}
