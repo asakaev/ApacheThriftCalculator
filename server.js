@@ -2,7 +2,7 @@ var thrift = require("thrift");
 var Calculator = require("./gen-nodejs/Calculator");
 var ttypes = require("./gen-nodejs/calculator_types");
 
-var data = {};
+var protocol = thrift.TJSONProtocol();
 
 var server = thrift.createServer(Calculator, {
   ping: function (result) {
@@ -15,6 +15,6 @@ var server = thrift.createServer(Calculator, {
     result(null, n1 + n2);
   }
 
-}, {});
+}, { protocol: protocol });
 
 server.listen(1337);
