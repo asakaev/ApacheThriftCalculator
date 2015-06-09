@@ -3,7 +3,7 @@ var Calculator = require('./gen-nodejs/Calculator');
 var ttypes = require('./gen-nodejs/calculator_types');
 
 transport = thrift.TBufferedTransport();
-protocol = thrift.TJSONProtocol();
+protocol = thrift.TBinaryProtocol();
 
 var connection = thrift.createConnection("localhost", 1337, {
   transport: transport,
