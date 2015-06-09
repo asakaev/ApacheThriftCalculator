@@ -105,6 +105,6 @@ process.addListener('SIGHUP', calc.reload);
 process.addListener('SIGINT', calc.destroy);
 process.addListener('SIGTERM', calc.destroy);
 
-calc.init(process.env['PORT'] || 1337,
-        process.env['HOST'] || '127.0.0.1',
+calc.init(process.env['PORT'] || 13370,
+        process.env['HOST'] || '0.0.0.0',
         new ext.Application(process.env['CONFIG']));
