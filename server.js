@@ -17,4 +17,4 @@ var server = thrift.createServer(Calculator, {
 
 }, { protocol: protocol });
 
-server.listen(1337);
+server.listen(13370, '0.0.0.0');
