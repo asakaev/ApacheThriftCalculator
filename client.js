@@ -5,7 +5,7 @@ var ttypes = require('./gen-nodejs/calculator_types');
 transport = thrift.TBufferedTransport();
 protocol = thrift.TJSONProtocol();
 
-var connection = thrift.createConnection("localhost", 1337, {
+var connection = thrift.createConnection('127.0.0.1', 1337, {
   transport: transport,
   protocol: protocol
 });
@@ -23,5 +23,5 @@ client.ping(function (err, response) {
 
 client.add(1, 1, function (err, response) {
   console.log("1+1=" + response);
-  connection.end();
+  //connection.end();
 });
